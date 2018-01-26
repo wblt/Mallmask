@@ -53,6 +53,8 @@
 		363854612004C4FA00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854602004C4F900899B11 /* README.md */; };
 		363854632004CF6300899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854622004CF6300899B11 /* README.md */; };
 		92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D497ADAEE224F0451F225E /* libPods-iOSBase.a */; };
+		F833BA93201B0F95006190D0 /* MainTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F833BA91201B0F94006190D0 /* MainTabBarItem.m */; };
+		F833BA96201B0FA3006190D0 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F833BA94201B0FA3006190D0 /* MainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,10 @@
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854622004CF6300899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
+		F833BA91201B0F94006190D0 /* MainTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarItem.m; sourceTree = "<group>"; };
+		F833BA92201B0F94006190D0 /* MainTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarItem.h; sourceTree = "<group>"; };
+		F833BA94201B0FA3006190D0 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		F833BA95201B0FA3006190D0 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		FC0F68CA62C14D611F9401DA /* Pods-iOSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -303,6 +309,10 @@
 				3638542820049D8500899B11 /* BaseNavViewController.m */,
 				3638542A20049D8500899B11 /* BaseViewController.h */,
 				3638542920049D8500899B11 /* BaseViewController.m */,
+				F833BA92201B0F94006190D0 /* MainTabBarItem.h */,
+				F833BA91201B0F94006190D0 /* MainTabBarItem.m */,
+				F833BA95201B0FA3006190D0 /* MainTabBarController.h */,
+				F833BA94201B0FA3006190D0 /* MainTabBarController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -643,6 +653,8 @@
 				3638542B20049D8500899B11 /* BaseNavViewController.m in Sources */,
 				363854252004997200899B11 /* NetworkSingleton.m in Sources */,
 				363853DE20046C4B00899B11 /* SYCacheManager.m in Sources */,
+				F833BA96201B0FA3006190D0 /* MainTabBarController.m in Sources */,
+				F833BA93201B0F95006190D0 /* MainTabBarItem.m in Sources */,
 				3638541C2004981D00899B11 /* UIView+Extend.m in Sources */,
 				363853AA200465BA00899B11 /* AppDelegate.m in Sources */,
 				3638541A2004981D00899B11 /* UICollectionView+IndexPath.m in Sources */,
