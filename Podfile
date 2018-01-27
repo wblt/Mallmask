@@ -9,4 +9,10 @@ pod 'SDWebImage', '~> 4.0'
 pod 'IQKeyboardManager'
 pod 'SVProgressHUD'
 pod 'LKDBHelper'
+
+pod 'mob_sharesdk'
+pod 'mob_sharesdk/ShareSDKUI'
+pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+
 end
