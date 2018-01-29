@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36153F3B201ED9F700AEC98B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36153F3A201ED9F600AEC98B /* README.md */; };
 		363853AA200465BA00899B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853A9200465BA00899B11 /* AppDelegate.m */; };
 		363853AD200465BA00899B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363853AC200465BA00899B11 /* ViewController.m */; };
 		363853B0200465BA00899B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363853AE200465BA00899B11 /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		02D497ADAEE224F0451F225E /* libPods-iOSBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36153F3A201ED9F600AEC98B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363853A5200465BA00899B11 /* iOSBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363853A8200465BA00899B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		363853A9200465BA00899B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -193,6 +195,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		36153F38201ED9C100AEC98B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				36153F3A201ED9F600AEC98B /* README.md */,
+				36153F39201ED9DE00AEC98B /* XXXTest */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		36153F39201ED9DE00AEC98B /* XXXTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XXXTest;
+			sourceTree = "<group>";
+		};
 		3638539C200465BA00899B11 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +236,7 @@
 		363853A7200465BA00899B11 /* iOSBase */ = {
 			isa = PBXGroup;
 			children = (
+				36153F38201ED9C100AEC98B /* Test */,
 				363853ED2004706800899B11 /* Modules */,
 				363853EA20046E0B00899B11 /* Net */,
 				363853E720046E0300899B11 /* Base */,
@@ -548,6 +567,7 @@
 				3638545D2004C4BB00899B11 /* README.md in Resources */,
 				363853B2200465BA00899B11 /* Assets.xcassets in Resources */,
 				363854502004C0A600899B11 /* close_icon@2x.png in Resources */,
+				36153F3B201ED9F700AEC98B /* README.md in Resources */,
 				363853E920046E0400899B11 /* README.md in Resources */,
 				363854612004C4FA00899B11 /* README.md in Resources */,
 				363854632004CF6300899B11 /* README.md in Resources */,
