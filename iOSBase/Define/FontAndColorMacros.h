@@ -13,7 +13,6 @@
 //默认间距
 #define KNormalSpace 12.0f
 
-
 #pragma mark -  颜色区
 //主题色 导航栏颜色
 #define CNavBgColor  [UIColor colorWithHexString:@"00AE68"]

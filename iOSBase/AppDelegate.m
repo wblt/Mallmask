@@ -17,6 +17,8 @@
 #import <TencentOpenAPI/QQApiInterface.h>
 //微信SDK头文件
 #import "WXApi.h"
+#import "BaseNavViewController.h"
+#import "RootTestController.h"
 
 @interface AppDelegate ()
 
@@ -39,10 +41,14 @@
 	keyboardManager.shouldResignOnTouchOutside = YES; // 控制点击背景是否收起键盘
 	keyboardManager.keyboardDistanceFromTextField = 10.0f; // 输入框距离键盘的距离
 	
-	MainTabBarController *mainTabbar = [[MainTabBarController alloc] init];
-	mainTabbar.selectIndex = 0;
-	self.window.rootViewController = mainTabbar;
-	
+    BOOL testSwitch = false;
+    if (testSwitch == false) {
+        MainTabBarController *mainTabbar = [[MainTabBarController alloc] init];
+        mainTabbar.selectIndex = 0;
+        self.window.rootViewController = mainTabbar;
+    } else {
+        [self enterTest];
+    }
     return YES;
 }
 
@@ -112,6 +118,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)enterTest {
+    RootTestController *testVC = [[RootTestController alloc] init];
+    BaseNavViewController *nav = [[BaseNavViewController alloc] initWithRootViewController:testVC];
+    self.window.rootViewController = nav;
 }
 
 
