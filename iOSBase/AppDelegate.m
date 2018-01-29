@@ -41,7 +41,7 @@
 	keyboardManager.shouldResignOnTouchOutside = YES; // 控制点击背景是否收起键盘
 	keyboardManager.keyboardDistanceFromTextField = 10.0f; // 输入框距离键盘的距离
 	
-    BOOL testSwitch = false;
+    BOOL testSwitch = true;
     if (testSwitch == false) {
         MainTabBarController *mainTabbar = [[MainTabBarController alloc] init];
         mainTabbar.selectIndex = 0;
@@ -75,7 +75,7 @@
 	 }
 					  onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
 	 {
-		 
+#warning URL Types 中设置的是 ShareSDk 的scheme  正式版需要修改
 		 switch (platformType)
 		 {
 			 case SSDKPlatformTypeWechat:
