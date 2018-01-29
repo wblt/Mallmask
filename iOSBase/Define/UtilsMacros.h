@@ -150,5 +150,9 @@ return shared##className; \
 /**  通知名   */
 #define kNotificationName_ReloadHome @"kNotificationName_ReloadHome"
 #define kNotificationName_ReloadManagerWatch @"kNotificationName_ReloadManagerWatch"
+#define kNOtificationName_WXPaySuccess @"kNOtificationName_WXPaySuccess"
+#define kNOtificationName_WXPayFailure @"kNOtificationName_WXPayFailure"
+#define kNOtificationName_AliPaySuccess @"kNOtificationName_AliPaySuccess"
+#define kNOtificationName_AliPayFailure @"kNOtificationName_AliPayFailure"
 
 #endif /* UtilsMacros_h */

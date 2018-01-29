@@ -57,6 +57,19 @@
 		363854612004C4FA00899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854602004C4F900899B11 /* README.md */; };
 		363854632004CF6300899B11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 363854622004CF6300899B11 /* README.md */; };
 		92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D497ADAEE224F0451F225E /* libPods-iOSBase.a */; };
+		F82CBB92201F16A500D41027 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F82CBB90201F16A500D41027 /* AlipaySDK.bundle */; };
+		F82CBB93201F16A500D41027 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB91201F16A500D41027 /* AlipaySDK.framework */; };
+		F82CBB95201F171800D41027 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB94201F171800D41027 /* libc.tbd */; };
+		F82CBB97201F172400D41027 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB96201F172400D41027 /* libz.tbd */; };
+		F82CBB99201F173300D41027 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB98201F172C00D41027 /* SystemConfiguration.framework */; };
+		F82CBB9B201F174600D41027 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB9A201F173D00D41027 /* CoreTelephony.framework */; };
+		F82CBB9D201F176200D41027 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB9C201F175500D41027 /* QuartzCore.framework */; };
+		F82CBB9F201F177300D41027 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBB9E201F176900D41027 /* CoreText.framework */; };
+		F82CBBA1201F17A300D41027 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBBA0201F179D00D41027 /* CoreGraphics.framework */; };
+		F82CBBA3201F17B000D41027 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBBA2201F17AB00D41027 /* UIKit.framework */; };
+		F82CBBA5201F17C600D41027 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBBA4201F17C100D41027 /* Foundation.framework */; };
+		F82CBBA7201F17D100D41027 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBBA6201F17CD00D41027 /* CFNetwork.framework */; };
+		F82CBBA9201F17E100D41027 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82CBBA8201F17DB00D41027 /* CoreMotion.framework */; };
 		F833BA93201B0F95006190D0 /* MainTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F833BA91201B0F94006190D0 /* MainTabBarItem.m */; };
 		F833BA96201B0FA3006190D0 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F833BA94201B0FA3006190D0 /* MainTabBarController.m */; };
 /* End PBXBuildFile section */
@@ -161,6 +174,19 @@
 		363854602004C4F900899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		363854622004CF6300899B11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D47F575D57BBA9836E5F5A5 /* Pods-iOSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBase/Pods-iOSBase.release.xcconfig"; sourceTree = "<group>"; };
+		F82CBB90201F16A500D41027 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		F82CBB91201F16A500D41027 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		F82CBB94201F171800D41027 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		F82CBB96201F172400D41027 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F82CBB98201F172C00D41027 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F82CBB9A201F173D00D41027 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F82CBB9C201F175500D41027 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F82CBB9E201F176900D41027 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F82CBBA0201F179D00D41027 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F82CBBA2201F17AB00D41027 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F82CBBA4201F17C100D41027 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F82CBBA6201F17CD00D41027 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F82CBBA8201F17DB00D41027 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F833BA91201B0F94006190D0 /* MainTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarItem.m; sourceTree = "<group>"; };
 		F833BA92201B0F94006190D0 /* MainTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarItem.h; sourceTree = "<group>"; };
 		F833BA94201B0FA3006190D0 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
@@ -173,7 +199,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82CBBA9201F17E100D41027 /* CoreMotion.framework in Frameworks */,
+				F82CBBA7201F17D100D41027 /* CFNetwork.framework in Frameworks */,
+				F82CBBA5201F17C600D41027 /* Foundation.framework in Frameworks */,
+				F82CBBA3201F17B000D41027 /* UIKit.framework in Frameworks */,
+				F82CBBA1201F17A300D41027 /* CoreGraphics.framework in Frameworks */,
+				F82CBB9F201F177300D41027 /* CoreText.framework in Frameworks */,
+				F82CBB9D201F176200D41027 /* QuartzCore.framework in Frameworks */,
+				F82CBB9B201F174600D41027 /* CoreTelephony.framework in Frameworks */,
+				F82CBB99201F173300D41027 /* SystemConfiguration.framework in Frameworks */,
 				92A34F38F4AC27A3C3ADFC02 /* libPods-iOSBase.a in Frameworks */,
+				F82CBB97201F172400D41027 /* libz.tbd in Frameworks */,
+				F82CBB95201F171800D41027 /* libc.tbd in Frameworks */,
+				F82CBB93201F16A500D41027 /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +235,17 @@
 		1F026EBD281D4DC1EBEDAA46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F82CBBA8201F17DB00D41027 /* CoreMotion.framework */,
+				F82CBBA6201F17CD00D41027 /* CFNetwork.framework */,
+				F82CBBA4201F17C100D41027 /* Foundation.framework */,
+				F82CBBA2201F17AB00D41027 /* UIKit.framework */,
+				F82CBBA0201F179D00D41027 /* CoreGraphics.framework */,
+				F82CBB9E201F176900D41027 /* CoreText.framework */,
+				F82CBB9C201F175500D41027 /* QuartzCore.framework */,
+				F82CBB9A201F173D00D41027 /* CoreTelephony.framework */,
+				F82CBB98201F172C00D41027 /* SystemConfiguration.framework */,
+				F82CBB96201F172400D41027 /* libz.tbd */,
+				F82CBB94201F171800D41027 /* libc.tbd */,
 				02D497ADAEE224F0451F225E /* libPods-iOSBase.a */,
 			);
 			name = Frameworks;
@@ -327,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				363853E520046DFC00899B11 /* README.md */,
+				F82CBB8F201F16A500D41027 /* AliPaySDK */,
 			);
 			path = ThridParty;
 			sourceTree = "<group>";
@@ -463,6 +513,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F82CBB8F201F16A500D41027 /* AliPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				F82CBB90201F16A500D41027 /* AlipaySDK.bundle */,
+				F82CBB91201F16A500D41027 /* AlipaySDK.framework */,
+			);
+			path = AliPaySDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,6 +640,7 @@
 				36153F3B201ED9F700AEC98B /* README.md in Resources */,
 				363853E920046E0400899B11 /* README.md in Resources */,
 				363854612004C4FA00899B11 /* README.md in Resources */,
+				F82CBB92201F16A500D41027 /* AlipaySDK.bundle in Resources */,
 				363854632004CF6300899B11 /* README.md in Resources */,
 				363854572004C0C200899B11 /* README.md in Resources */,
 				363853E320046DF500899B11 /* README.md in Resources */,
@@ -858,6 +918,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6HGC9SU2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSBase/ThridParty/AliPaySDK",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSBase/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -875,6 +939,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HR6HGC9SU2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSBase/ThridParty/AliPaySDK",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSBase/Define/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

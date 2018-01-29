@@ -19,8 +19,10 @@
 #import "WXApi.h"
 #import "BaseNavViewController.h"
 #import "RootTestController.h"
+//支付宝用
+#import <AlipaySDK/AlipaySDK.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UIApplicationDelegate,WXApiDelegate>
 
 @end
 
@@ -92,6 +94,51 @@
 		 }
 	 }];
 	
+}
+
+-(void) onResp:(BaseResp*)resp
+{
+	if([resp isKindOfClass:[PayResp class]]){
+		//支付返回结果，实际支付结果需要去微信服务器端查询
+		switch (resp.errCode) {
+			case WXSuccess:
+				KPostNotification(kNOtificationName_WXPaySuccess, resp);
+				break;
+			default:
+				KPostNotification(kNOtificationName_WXPayFailure, resp);
+				break;
+		}
+	}
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary*)options{
+	if ([url.host isEqualToString:@"safepay"]) {
+		//跳转支付宝钱包进行支付，处理支付结果
+		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+			DLog(@"result = %@",resultDic);
+		}];
+		
+		return YES;
+	}
+	
+	return  [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+	return  [WXApi handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+	if ([url.host isEqualToString:@"safepay"]) {
+		//跳转支付宝钱包进行支付，处理支付结果
+		[[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+			DLog(@"result = %@",resultDic);
+		}];
+		
+		return YES;
+	}
+	
+	return  [WXApi handleOpenURL:url delegate:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

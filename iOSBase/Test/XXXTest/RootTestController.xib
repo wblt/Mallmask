@@ -57,19 +57,39 @@
                                         <action selector="Share:" destination="-1" eventType="touchUpInside" id="Xd1-kf-mQs"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxT-E8-YEL">
+                                    <rect key="frame" x="10" y="193" width="80" height="30"/>
+                                    <state key="normal" title="微信支付"/>
+                                    <connections>
+                                        <action selector="weixinPay:" destination="-1" eventType="touchUpInside" id="qfp-pN-WLl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdA-xq-SUa">
+                                    <rect key="frame" x="10" y="231" width="80" height="30"/>
+                                    <state key="normal" title="支付宝支付"/>
+                                    <connections>
+                                        <action selector="AliPay:" destination="-1" eventType="touchUpInside" id="s5x-9V-pHr"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="NdA-xq-SUa" firstAttribute="centerX" secondItem="uxT-E8-YEL" secondAttribute="centerX" id="2dw-tg-l2J"/>
                                 <constraint firstItem="OI2-7F-sIq" firstAttribute="top" secondItem="vpN-gX-dkh" secondAttribute="bottom" constant="10" id="6MX-B2-FH4"/>
                                 <constraint firstItem="57F-h3-ori" firstAttribute="centerX" secondItem="OI2-7F-sIq" secondAttribute="centerX" id="7dU-KY-81T"/>
                                 <constraint firstItem="N0f-W3-acT" firstAttribute="top" secondItem="57F-h3-ori" secondAttribute="bottom" constant="8" id="ADy-yL-lGW"/>
                                 <constraint firstItem="57F-h3-ori" firstAttribute="top" secondItem="OI2-7F-sIq" secondAttribute="bottom" constant="8" id="BpA-ob-jwK"/>
+                                <constraint firstItem="uxT-E8-YEL" firstAttribute="top" secondItem="N0f-W3-acT" secondAttribute="bottom" constant="8" id="FKr-7Y-VQK"/>
+                                <constraint firstItem="uxT-E8-YEL" firstAttribute="leading" secondItem="N0f-W3-acT" secondAttribute="leading" id="WQ0-yQ-vf3"/>
                                 <constraint firstItem="vpN-gX-dkh" firstAttribute="top" secondItem="yfV-tq-JVv" secondAttribute="top" constant="64" id="ZcI-Ea-A1N"/>
                                 <constraint firstItem="OI2-7F-sIq" firstAttribute="leading" secondItem="yfV-tq-JVv" secondAttribute="leading" constant="10" id="ZyD-rh-u9m"/>
                                 <constraint firstAttribute="trailing" secondItem="vpN-gX-dkh" secondAttribute="trailing" id="ahn-e5-zQY"/>
+                                <constraint firstItem="NdA-xq-SUa" firstAttribute="leading" secondItem="uxT-E8-YEL" secondAttribute="leading" id="ePh-Fl-eOX"/>
                                 <constraint firstItem="N0f-W3-acT" firstAttribute="centerX" secondItem="57F-h3-ori" secondAttribute="centerX" id="hdZ-Vh-IOq"/>
+                                <constraint firstItem="NdA-xq-SUa" firstAttribute="top" secondItem="uxT-E8-YEL" secondAttribute="bottom" constant="8" id="hsz-Qb-hK5"/>
                                 <constraint firstItem="57F-h3-ori" firstAttribute="leading" secondItem="OI2-7F-sIq" secondAttribute="leading" id="ktr-HH-NO4"/>
                                 <constraint firstItem="vpN-gX-dkh" firstAttribute="leading" secondItem="yfV-tq-JVv" secondAttribute="leading" id="oWv-TN-RDV"/>
+                                <constraint firstItem="uxT-E8-YEL" firstAttribute="centerX" secondItem="N0f-W3-acT" secondAttribute="centerX" id="sL9-aZ-WyP"/>
                                 <constraint firstItem="N0f-W3-acT" firstAttribute="leading" secondItem="57F-h3-ori" secondAttribute="leading" id="w1X-Qr-7zD"/>
                             </constraints>
                         </view>
@@ -91,7 +111,7 @@
                 <constraint firstAttribute="bottom" secondItem="tOb-OL-1QH" secondAttribute="bottom" id="gyG-Ep-9Pm"/>
                 <constraint firstAttribute="trailing" secondItem="tOb-OL-1QH" secondAttribute="trailing" id="wGn-oF-tkj"/>
             </constraints>
-            <point key="canvasLocation" x="67.5" y="71.5"/>
+            <point key="canvasLocation" x="-159" y="-27"/>
         </view>
     </objects>
 </document>
